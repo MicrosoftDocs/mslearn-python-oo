@@ -4,7 +4,7 @@ class Participant:
         self.points = 0
         self.choice = ""
     def choose(self):
-        self.choice = input("{name}, select rock, paper or scissor, lizard, or spock: ".format(name=self.name))
+        self.choice = input("{name}, select rock, paper, scissor, lizard, or spock: ".format(name=self.name))
         print("{name} selects {choice}".format(name=self.name, choice=self.choice))
     def toNumericalChoice(self):
         switcher = {
