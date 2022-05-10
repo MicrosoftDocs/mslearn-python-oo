@@ -6,6 +6,7 @@ class Participant:
     def choose(self):
         self.choice = input("{name}, select rock, paper or scissor: ".format(name=self.name))
         print("{name} selects {choice}".format(name=self.name, choice=self.choice))
+
     def toNumericalChoice(self):
         switcher = {
             "rock": 0,
@@ -25,6 +26,7 @@ class GameRound:
         p2.choose()
         result = self.compareChoices(p1, p2)
         print("Round resulted in a {result}".format(result=self.getResultAsString(result)))
+
     def compareChoices(self, p1, p2):
         return self.rules[p1.toNumericalChoice()][p2.toNumericalChoice()]
     def awardPoints(self):
