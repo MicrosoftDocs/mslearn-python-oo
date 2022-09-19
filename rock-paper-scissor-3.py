@@ -41,7 +41,7 @@ class GameRound:
         res = {
             0: "draw",
             1: "win",
-            -1: "loss
+            -1: "loss"
         }
         return res[result]
 
